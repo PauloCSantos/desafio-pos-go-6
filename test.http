@@ -1,0 +1,49 @@
+### Criar um usuário
+POST http://localhost:8080/user
+Content-Type: application/json
+
+{
+  "name": "Name"
+}
+
+### Criar um leilão
+POST http://localhost:8080/auction
+Content-Type: application/json
+
+{
+  "product_name": "Product example",
+  "category": "examples",
+  "description": "That is a example of the product",
+  "condition": 0
+}
+
+### Criar um lance
+POST http://localhost:8080/bid
+Content-Type: application/json
+
+{
+  "auction_id": "UUID",
+  "user_id": "UUID",
+  "amount": 100.00
+}
+
+### Buscar todos os leilões
+GET http://localhost:8080/auction?status=0
+Accept: application/json
+
+### Buscar um leilão por ID
+GET http://localhost:8080/auction/UUID
+Accept: application/json
+
+### Buscar o lance vencedor de um leilão
+GET http://localhost:8080/auction/winner/UUID
+Accept: application/json
+
+### Buscar lances por ID do leilão
+GET http://localhost:8080/bid/UUID
+Accept: application/json
+
+### Buscar usuário por ID
+GET http://localhost:8080/user/UUID
+Accept: application/json
+
