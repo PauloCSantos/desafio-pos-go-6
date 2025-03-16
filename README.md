@@ -1,4 +1,4 @@
-# Desafio 5 Pós Go Lang - Full Cycle
+# Desafio 6 Pós Go Lang - Full Cycle
 
 ## Objetivo
 
